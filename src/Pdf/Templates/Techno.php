@@ -9,8 +9,15 @@
             margin: 16mm;
         }
 
+        @font-face {
+            font-family: 'BebasNeue';
+            src: url('<?= $this->e($BEBAS_NEUE) ?>') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "BebasNeue", Arial, Helvetica, sans-serif;
             font-size: 13px;
             color: #111;
         }
@@ -32,7 +39,7 @@
         }
 
         .small {
-            font-size: 11px;
+            font-size: 10px;
             line-height: 1.25;
         }
 
@@ -42,7 +49,6 @@
 
         .title {
             font-size: 30px;
-            font-weight: 700;
             letter-spacing: .3px;
             margin: 0 0 2px 0;
         }
@@ -60,7 +66,6 @@
 
         .val {
             font-size: 12px;
-            font-weight: 600;
         }
 
         .right {
