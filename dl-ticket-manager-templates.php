@@ -12,14 +12,12 @@
 
 defined('ABSPATH') || exit;
 
-require_once __DIR__ . '/vendor/autoload.php';
-
-use DL\TicketManagerTemplates\Plugin;
+require_once __DIR__ . '/src/Plugin.php';
 
 add_action('plugins_loaded', function () {
 
     load_plugin_textdomain('dl-ticket-manager-templates', false, dirname(plugin_basename(__FILE__)) . '/languages');
 
-    $plugin = new Plugin();
+    $plugin = new DLTMTemplatesPlugin();
     $plugin->init();
 });

@@ -1,9 +1,6 @@
 <?php
 
-namespace DL\TicketManagerTemplates;
-
-
-class Plugin
+class DLTMTemplatesPlugin
 {
 
     public function init(): void
