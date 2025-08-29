@@ -16,8 +16,8 @@ class DLTMTemplatesPlugin
     public function loadTemplates($templates)
     {
 
-        $templates[plugin_dir_path(__FILE__) . '/Pdf/Templates/Modern.php'] = __('Modern', 'dl-ticket-manager-templates');
-        $templates[plugin_dir_path(__FILE__) . '/Pdf/Templates/Techno.php'] = __('Techno', 'dl-ticket-manager-templates');
+        $templates[plugin_dir_path(__FILE__) . '/Pdf/Modern.php'] = __('Modern', 'dl-ticket-manager-templates');
+        $templates[plugin_dir_path(__FILE__) . '/Pdf/Techno.php'] = __('Techno', 'dl-ticket-manager-templates');
 
         return $templates;
     }
