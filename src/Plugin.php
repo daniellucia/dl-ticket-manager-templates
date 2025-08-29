@@ -5,6 +5,11 @@ defined('ABSPATH') || exit;
 class DLTMTemplatesPlugin
 {
 
+    /**
+     * Inicializamos el plugin
+     * @return void
+     * @author Daniel Lucia
+     */
     public function init(): void
     {
         add_filter('dl_ticket_manager_templates', [$this, 'loadTemplates'], 10, 1);
@@ -12,7 +17,11 @@ class DLTMTemplatesPlugin
         add_filter('dl_ticket_manager_pdf_template_vars', [$this, 'addTemplateVars'], 10, 1);
     }
 
-
+    /**
+     * Cargamos plantillas al selector
+     * @param mixed $templates
+     * @author Daniel Lucia
+     */
     public function loadTemplates($templates)
     {
 
@@ -22,6 +31,11 @@ class DLTMTemplatesPlugin
         return $templates;
     }
 
+    /**
+     * Modificamos las opciones de Dompdf
+     * @param mixed $options
+     * @author Daniel Lucia
+     */
     public function modifyDompdfOptions($options)
     {
 
@@ -31,6 +45,11 @@ class DLTMTemplatesPlugin
         return $options;
     }
 
+    /**
+     * Agregamos variables a las plantillas para que cargue las fuentes
+     * @param mixed $vars
+     * @author Daniel Lucia
+     */
     public function addTemplateVars($vars)
     {
 
