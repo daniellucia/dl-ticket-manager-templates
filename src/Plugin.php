@@ -1,8 +1,10 @@
 <?php
 
+namespace DL\TicketsTemplates;
+
 defined('ABSPATH') || exit;
 
-class DLTMTemplatesPlugin
+class Plugin
 {
 
     /**
